@@ -1,0 +1,12 @@
+node_modules
+
+#Keys
+secret.json
+
+#Hardhat files
+cache
+artifacts
+yarn-error.log
+
+#Other
+.DS_Store

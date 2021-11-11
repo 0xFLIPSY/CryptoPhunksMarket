@@ -1,0 +1,20 @@
+[
+  "event PhunkBidEntered(uint256 indexed phunkIndex, uint256 value, address indexed fromAddress)",
+  "event PhunkBidWithdrawn(uint256 indexed phunkIndex, uint256 value, address indexed fromAddress)",
+  "event PhunkBought(uint256 indexed phunkIndex, uint256 value, address indexed fromAddress, address indexed toAddress)",
+  "event PhunkNoLongerForSale(uint256 indexed phunkIndex)",
+  "event PhunkOffered(uint256 indexed phunkIndex, uint256 minValue, address indexed toAddress)",
+  "function acceptBidForPhunk(uint256 phunkIndex, uint256 minPrice)",
+  "function buyPhunk(uint256 phunkIndex) payable",
+  "function enterBidForPhunk(uint256 phunkIndex) payable",
+  "function offerPhunkForSale(uint256 phunkIndex, uint256 minSalePriceInWei)",
+  "function offerPhunkForSaleToAddress(uint256 phunkIndex, uint256 minSalePriceInWei, address toAddress)",
+  "function pendingWithdrawals(address) view returns (uint256)",
+  "function phunkBids(uint256) view returns (bool hasBid, uint256 phunkIndex, address bidder, uint256 value)",
+  "function phunkNoLongerForSale(uint256 phunkIndex)",
+  "function phunksAddress() view returns (address)",
+  "function phunksOfferedForSale(uint256) view returns (bool isForSale, uint256 phunkIndex, address seller, uint256 minValue, address onlySellTo)",
+  "function setPhunksContract(address newPhunksAddress)",
+  "function withdraw()",
+  "function withdrawBidForPhunk(uint256 phunkIndex)"
+]
